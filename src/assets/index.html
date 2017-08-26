@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/svg.css"/>
+  <script type="text/javascript" src="raphael/raphael-min.js"></script>
+  <script type="text/javascript" src="js/us_data.js"></script>
+  <script type="text/javascript" src="js/quiz.js"></script>
+  <script type="text/javascript" src="js/map_quiz.js"></script>
+</head>
+<body>
+
+<h3>State Capital Quiz</h3>
+<div id="container" style="position:relative">
+
+  <div class="answer_container">
+    <input type="text" id="answer" name="answer" placeholder="Capital City..."/>
+  </div>
+
+  <div id="incorrect" class="response">
+    <div class="close"><p>x</p></div>
+    <p>Wrong!<br/><span id="expected"></span></p>
+  </div>
+
+  <div id="map-container" style="position:relative"></div>
+</div>
+<script type="text/javascript">
+function f_in() {
+	console.log("State: ", this.data("name"));
+}
+
+function f_out() {
+	console.log("out");
+}
+
+Raphael(10, 10, 600, 400, function() {
+    var r = this;
+    
+    r.setStart();
+    for (var state in us) {
+        r.path(us[state].path)
+            .attr({stroke: 'white', fill: '#ccc', 'stroke-opacity': 0.5})
+            .data('abbr', state)
+            .data('name', us[state].name)
+            .data('capital', us[state].capital);
+    }
+    var us_map = r.setFinish();
+    us_map.scale('.5, .5, 0, 0');
+
+    var svg = document.getElementsByTagName('svg')[0];
+    $('#map-container').append(svg);
+    MapQuiz.init(r);
+    MapQuiz.beginQuiz();
+});
+
+$(function() {
+    $('#answer').val('').focus();
+
+    $('#answer').focus(function() {
+        $(this).select();
+    });
+
+    $('#answer').keydown(function(e) {
+        $('#incorrect .close').parent().hide();
+        if (e.keyCode == 9 || e.keyCode == 13) {
+            e.preventDefault();
+            $('#answer').trigger('blur');
+        }
+
+    });
+
+    $('#incorrect .close').click(function(e) {
+        $(this).parent().hide();
+        $('#answer').val('').focus();
+    });
+
+});
+</script>
+</body>
+</html>

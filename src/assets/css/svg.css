@@ -1,0 +1,55 @@
+h3 {
+  font: bold 12px verdana, sans-serif;
+  color: #e6e6e6;
+  float:left;
+}
+
+.answer_container {
+  float:right;
+  left: 140px;
+  top: 8px;
+  z-index: 200;
+  font: 12px verdana; }
+
+.answer_container label {
+    color:white;
+}
+
+#map-container {
+  clear:both;
+}
+
+.response {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 160px;
+  z-index: 100;
+  width: 180px;
+  height: 100px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px gray;
+  font: bold 20px verdana;
+  text-align: center; }
+
+#correct {
+  color: green; }
+
+#incorrect {
+  color: red; }
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid black;
+  width: 10px;
+  height: 11px; }
+  .close > p {
+    position: relative;
+    margin: -3px 0 0 -1px;
+    padding: 0;
+    color: red;
+    font: bold 12px verdana;
+    cursor: pointer; }

@@ -1,0 +1,30 @@
+#content-wrapper {
+  position:absolute;
+  background-color:white;
+  top: 100px;
+  left: calc(50% - 500px);
+  height: 800px;
+  width: calc(1000px);
+}
+
+#content-left-border {
+  position:absolute;
+  top:100px;
+  left:98px;
+  width:1px;
+  height:700px;
+  border-right:1px dotted #999;
+}
+
+#actual-content-container {
+  position:absolute;
+  top: 100px;
+  left: 100px;
+  width:calc(100% - 100px);
+  height:calc(100% - 100px);
+}
+
+#actual-content {
+  position:relative;
+  margin: 20px;
+}

@@ -1,0 +1,113 @@
+.Concept {
+  position:relative;
+  height:1000px;
+  border-bottom: 2px solid red;
+  clip-path: inset(0 0 0 0);
+}
+
+.horiz-block {
+  height:50%;
+}
+
+.vertical-block {
+  width:50%;
+}
+
+/*
+ * Style and animate top block
+ */
+#block1 {
+  animation: shift-up 10s forwards;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  background-color: #000;
+}
+@keyframes shift-up {
+  from { top: 0px; }
+  to { top:-400px; }
+}
+
+
+/*
+ * Style and animate bottom block
+ */
+#block2 {
+  animation: shift-down 10s forwards;
+  position:absolute;
+  bottom: 0px;
+  left: 0px;
+  width:100%;
+  background-color:#333;
+}
+@keyframes shift-down {
+  from { bottom: 0px; }
+  to { bottom:-400px; }
+}
+
+
+/*
+ * Construct and animate top decorative line
+ */
+#top-line-container {
+  animation: line-shift-left 10s forwards;
+  position:absolute;
+  bottom: 0px;
+  width:100%;
+  height:12px;
+}
+@keyframes line-shift-left {
+  from { left:0px; }
+  to { left: -700px; }
+}
+
+#top-line {
+  position:absolute;
+  top:0;
+  left:0px;
+  width:60%;
+  height:2px;
+  background-color:red;
+}
+#top-line-circle {
+  position:absolute;
+  width: 10px;
+  height: 10px;
+  top: -4px;
+  left:60%;
+  border-radius:10px;
+  background-color: red;
+}
+
+/*
+ * Style and animate left block
+ */
+#block3 {
+  animation: shift-left 10s forwards;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  height:1000px;
+  background-color:#666;
+}
+@keyframes shift-left {
+  from { left: 0px; }
+  to { left:-500px; }
+}
+
+/*
+ * Style and animate right block
+ */
+#block4 {
+  animation: shift-right 10s forwards;
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  height:1000px;
+  background-color:#999;
+}
+@keyframes shift-right {
+  from { right: 0px; }
+  to { right:-500px; }
+}
