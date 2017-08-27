@@ -7,7 +7,7 @@ const USMap = () => <div><h1>US Map</h1></div>
 
 export const SiteNav = () => (
     <HashRouter>
-      <div>
+      <div className="content-bg">
       <Route path="/" component={Home}></Route>
       <Route path="/decimals" component={Decimal}></Route>
       <Route path="/usmap" component={USMap}></Route>

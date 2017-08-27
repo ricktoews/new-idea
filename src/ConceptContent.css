@@ -1,16 +1,16 @@
 #content-wrapper {
   position:absolute;
   background-color:white;
-  top: 100px;
+  top: 50px;
   left: calc(50% - 500px);
-  height: 800px;
+  height: calc(90vh - 100px);
   width: calc(1000px);
 }
 
 #content-left-border {
   position:absolute;
-  top:100px;
-  left:98px;
+  top:50px;
+  left:48px;
   width:1px;
   height:700px;
   border-right:1px dotted #999;
@@ -18,13 +18,17 @@
 
 #actual-content-container {
   position:absolute;
-  top: 100px;
-  left: 100px;
-  width:calc(100% - 100px);
-  height:calc(100% - 100px);
+  top: 50px;
+  left: 50px;
+  width:calc(100% - 50px);
+  height:calc(100% - 50px);
 }
 
 #actual-content {
   position:relative;
   margin: 20px;
+}
+
+.concept-bg {
+  background-color: gray;
 }

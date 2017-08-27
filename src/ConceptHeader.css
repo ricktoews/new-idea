@@ -1,9 +1,9 @@
 #content-top-border {
   position:absolute;
-  top:98px;
-  left:100px;
+  top:48px;
+  left:50px;
   height:1px;
-  width:calc(100% - 100px);
+  width:calc(100% - 50px);
   border-bottom:1px dashed green;
 }
 
@@ -11,8 +11,8 @@ nav {
   position:relative;
   font-family: arial;
   font-size: 10pt;
-  margin-top: 70px;
-  left:100px;
+  margin-top: 20px;
+  left:50px;
 }
 
 nav ul {

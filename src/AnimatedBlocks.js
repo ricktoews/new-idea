@@ -11,6 +11,11 @@ export const AnimatedBlocks = () => (
       <div id="top-line-circle"></div>
     </div>
   </div>
-  <div id="block2" className="horiz-block"></div>
+  <div id="block2" className="horiz-block">
+    <div id="bottom-line-container">
+      <div id="bottom-line"></div>
+      <div id="bottom-line-circle"></div>
+    </div>
+  </div>
 </div>
 );
