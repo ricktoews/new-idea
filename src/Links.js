@@ -8,6 +8,7 @@ export const NavLinks = () => (
       <li><Link to="/">Home</Link></li>
       <li><Link to="/decimals">Decimal Calculator</Link></li>
       <li><Link to="/usmap">US States</Link></li>
+      <li><Link to="/shelf">Bookshelf</Link></li>
     </ul>
     </nav>
   </HashRouter>

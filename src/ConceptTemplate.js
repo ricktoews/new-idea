@@ -2,12 +2,12 @@ import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import { AnimatedBlocks } from './AnimatedBlocks.js';
 import { Header } from './HeaderTemplate.js';
+import { Home } from './Home.js';
 import { Decimal } from './DecimalCalc.js';
 import { Map } from './Map.js';
+import { Shelf } from './Shelf.js';
 
 import './ConceptContent.css';
-const Home = () => <div></div>
-
 
 export const Concept = () => (
 <div className="Concept">
@@ -18,15 +18,14 @@ export const Concept = () => (
 
     <div id="actual-content-container">
       <div id="actual-content">
-
         <HashRouter>
           <div>
           <Route path="/" component={Home}></Route>
           <Route path="/decimals" component={Decimal}></Route>
           <Route path="/usmap" component={Map}></Route>
+          <Route path="/shelf" component={Shelf}></Route>
           </div>
         </HashRouter>
-
       </div>
     </div>
 
