@@ -1,8 +1,8 @@
 import React from 'react';
-import { HashRouter, Link } from 'react-router-dom';
+import { Switch, Link } from 'react-router-dom';
 
 export const NavLinks = () => (
-  <HashRouter>
+  <Switch>
     <nav>
     <ul>
       <li><Link to="/">Home</Link></li>
@@ -10,5 +10,5 @@ export const NavLinks = () => (
       <li><Link to="/usmap">US States</Link></li>
     </ul>
     </nav>
-  </HashRouter>
+  </Switch>
 );

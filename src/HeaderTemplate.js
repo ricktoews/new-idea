@@ -4,7 +4,6 @@ import { NavLinks } from './Links.js';
 
 export const Header = () => (
   <div>
-    <NavLinks/>
     <div id="content-top-border"></div>
 
   </div>

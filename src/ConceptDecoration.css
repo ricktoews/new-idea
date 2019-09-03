@@ -147,3 +147,29 @@ body {
   from { right: 0px; }
   to { right:-500px; }
 }
+
+
+nav.btn {
+  display: flex;
+  position: absolute; 
+  bottom: 3px; 
+  left: 150px; 
+}
+.btn-hidden {
+  opacity: 0;
+}
+.btn-show {
+  opacity: 1;
+  transition: 2s;
+}
+nav > a {
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 5px;
+  border-radius: 12px;
+  background: #49c5b6; 
+  margin-right: 10px;
+}
+
