@@ -20,7 +20,7 @@ body {
  * Style and animate top block
  */
 #block1 {
-  animation: shift-up 10s forwards;
+  animation: shift-up 0s forwards;
   position:absolute;
   top: 0px;
   left: 0px;
@@ -37,7 +37,7 @@ body {
  * Style and animate bottom block
  */
 #block2 {
-  animation: shift-down 10s forwards;
+  animation: shift-down 0s forwards;
   position:absolute;
   bottom: 0px;
   left: 0px;
@@ -54,7 +54,7 @@ body {
  * Construct and animate top decorative line
  */
 #top-line-container {
-  animation: line-shift-left 10s forwards;
+  animation: line-shift-left 0s forwards;
   position:absolute;
   bottom: 0px;
   width:100%;
@@ -87,7 +87,7 @@ body {
  * Construct and animate bottom decorative line
  */
 #bottom-line-container {
-  animation: line-shift-right 10s forwards;
+  animation: line-shift-right 0s forwards;
   position:absolute;
   top: 0px;
   width:100%;
@@ -120,7 +120,7 @@ body {
  * Style and animate left block
  */
 #block3 {
-  animation: shift-left 10s forwards;
+  animation: shift-left 0s forwards;
   position:absolute;
   top: 0px;
   left: 0px;
@@ -136,7 +136,7 @@ body {
  * Style and animate right block
  */
 #block4 {
-  animation: shift-right 10s forwards;
+  animation: shift-right 0s forwards;
   position:absolute;
   top: 0px;
   right: 0px;
@@ -147,3 +147,29 @@ body {
   from { right: 0px; }
   to { right:-500px; }
 }
+
+
+nav.btn {
+  display: flex;
+  position: absolute; 
+  bottom: 3px; 
+  left: 150px; 
+}
+.btn-hidden {
+  opacity: 0;
+}
+.btn-show {
+  opacity: 1;
+  transition: 2s;
+}
+nav > a {
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 5px;
+  border-radius: 12px;
+  background: #49c5b6; 
+  margin-right: 10px;
+}
+

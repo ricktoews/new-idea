@@ -1,10 +1,10 @@
 #content-top-border {
   position:absolute;
-  top:48px;
-  left:50px;
+  top:23px;
+  left:23px;
   height:1px;
-  width:calc(100% - 50px);
-  border-bottom:1px dashed green;
+  width:calc(100% - 23px);
+  border-bottom:1px dotted #999;
 }
 
 nav {

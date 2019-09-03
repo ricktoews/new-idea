@@ -9,8 +9,8 @@
 
 #content-left-border {
   position:absolute;
-  top:50px;
-  left:48px;
+  top:24px;
+  left:23px;
   width:1px;
   height:700px;
   border-right:1px dotted #999;
@@ -18,10 +18,10 @@
 
 #actual-content-container {
   position:absolute;
-  top: 50px;
-  left: 50px;
-  width:calc(100% - 50px);
-  height:calc(100% - 50px);
+  top: 25px;
+  left: 25px;
+  width:calc(100% - 25px);
+  height:calc(100% - 25px);
   overflow-y: scroll;
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { Switch, HashRouter, Route } from 'react-router-dom';
 import { AnimatedBlocks } from './AnimatedBlocks.js';
 import { Header } from './HeaderTemplate.js';
 import { Home } from './Home.js';
@@ -18,14 +18,14 @@ export const Concept = () => (
 
     <div id="actual-content-container">
       <div id="actual-content">
-        <HashRouter>
+        <Switch>
           <div>
-          <Route path="/" component={Home}></Route>
+          <Route exact path="/" component={Home}></Route>
           <Route path="/decimals" component={Decimal}></Route>
           <Route path="/usmap" component={Map}></Route>
           <Route path="/shelf" component={Shelf}></Route>
           </div>
-        </HashRouter>
+        </Switch>
       </div>
     </div>
 
