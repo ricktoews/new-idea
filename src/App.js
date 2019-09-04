@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import { Concept } from './ConceptTemplate';
 
-class App extends Component {
-  render() {
-    return (
-      <Concept/>
-    );
-  }
+function App(props) {
+  const { content } = props;
+  return (
+    <Concept content={content} />
+  );
 }
 
 export default App;

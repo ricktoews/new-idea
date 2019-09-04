@@ -22,7 +22,7 @@ export const AnimatedBlocks = () => {
           </div>
           <nav className="btn btn-hidden">
             <Link to="/">Home</Link>
-            <Link to="/decimals">Decimals</Link>
+            <Link to="/denom">Denominators</Link>
             <Link to="/usmap">Maps</Link>
           </nav>
         </div>

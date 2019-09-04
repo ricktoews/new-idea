@@ -1,15 +1,16 @@
 import React from 'react';
-import { Switch, HashRouter, Route } from 'react-router-dom';
 import { AnimatedBlocks } from './AnimatedBlocks.js';
+import Router from './Router';
 import { Header } from './HeaderTemplate.js';
-import { Decimal } from './DecimalCalc.js';
+import Denom from './math-denom/Denom';
 import { Map } from './Map.js';
+import Home from './home-posts/Home';
 
 import './ConceptContent.css';
-const Home = () => <div></div>
 
-
-export const Concept = () => (
+export const Concept = (props) => {
+  const { content } = props;
+  return (
 <div className="Concept">
 {/* Content */}
   <div id="content-wrapper">
@@ -18,15 +19,7 @@ export const Concept = () => (
 
     <div id="actual-content-container">
       <div id="actual-content">
-
-        <Switch>
-          <div>
-          <Route path="/" component={Home}></Route>
-          <Route path="/decimals" component={Decimal}></Route>
-          <Route path="/usmap" component={Map}></Route>
-          </div>
-        </Switch>
-
+        <Router posts={content}/>
       </div>
     </div>
 
@@ -34,4 +27,5 @@ export const Concept = () => (
 
   <AnimatedBlocks/>
 </div>
-)
+  );
+}

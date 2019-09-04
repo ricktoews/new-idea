@@ -1,0 +1,62 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.left-side {
+  width: 45%;
+  background: #eee;
+  height: calc(100vh - 50px);
+  padding: 20px;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+.right-side {
+  width: 45%;
+  background: #ddd;
+  padding: 20px;
+  overflow-wrap: break-word;
+}
+
+.numerator span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height:20px;
+  text-align: center;
+  font-size: .55rem;
+  cursor: pointer;
+  margin: 2px;
+  background-color:gray;
+  color: white;
+  border-radius: 13px;
+}
+
+.non-repeat {
+  color: #333;
+}
+.repeat {
+  color: #09f;
+}
+.repeat-a {
+  color: #09f;
+}
+.repeat-b {
+  color: #f90;
+}
+.to-infinity {
+  color: #ccc;
+}
+.expansion {
+  display: block;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+.numerators {
+}
+.show-numerators {
+  display:block;
+}
+.hide-numerators {
+  display:none;
+}
